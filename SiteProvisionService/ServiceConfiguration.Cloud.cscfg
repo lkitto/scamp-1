@@ -3,7 +3,7 @@
   <Role name="SiteProvisioningWorker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="SBConnectionString" value="Endpoint=sb://ericmaino.servicebus.windows.net/;SharedAccessKeyName=PublishOnly;SharedAccessKey=1Yrw0kW5sgCYeD/K96VRamn8m73ifBkR3PT9rfpbhTs=" />
+      <Setting name="SBConnectionString" value="Endpoint=sb://gsuscampdev.azurewebsites.net/;SharedAccessKeyName=PublishOnly;SharedAccessKey=2NVldss2IB4YtsKV4fxiETROaNrlzCuQodSMCUzT2X4=" />
       <Setting name="SBTopic" value="ProvisionRequests" />
       <Setting name="SBSubscription" value="Production" />
       <Setting name="StorageConnectionString" value="UseDevelopmentStorage=true" />
