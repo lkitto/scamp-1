@@ -42,24 +42,40 @@
         <table class="siteList">
             <tr ng-repeat="s in course.Students | orderBy: ['LastName', 'FirstName']">
 
-                <td class="nameRow" ><strong> {{s.FirstName}} {{s.LastName}}</strong></td>
+                <td class="nameRow">
+                    <strong>
+                        {{s.FirstName}} {{s.LastName}} <br />
+                        ($0.00)
+                    </strong>
+                </td>
+
                 <td>
-                    <table>
-                        <tr>
-                            <td>Cost</td>
-                            <td>WebSite</td>
-                            <td>FTP Site</td>
-                            <td>Username</td>
-                            <td>Password</td>
-                        </tr>
-                        <tr>
-                            <td>$0.00</td>
-                            <td>{{s.WebSiteUri}}</td>
-                            <td>{{s.FtpUri}}</td>
-                            <td>{{s.FtpUsername}}</td>
-                            <td>{{s.FtpPassword}} </td>
-                        </tr>
-                    </table>
+                    <pre> <strong> 
+{{s.FirstName}} {{s.LastName}}</strong>
+User Name = {{s.FtpUsername}} 
+Password = {{s.FtpPassword}}
+WebSite = {{s.WebSiteUri}}
+FTP Site = {{s.FtpUri}}
+    
+</pre>
+                    <!--                <table>
+                                           <tr>
+                                               <td>Username</td>
+                                               <td>Password</td>
+                                               <td>WebSite</td>
+                                               <td>FTP Site</td>
+
+                                               <td>Cost</td>
+                                           </tr>
+                                           <tr>
+                                               <td>{{s.FtpUsername}}</td>
+                                               <td>{{s.FtpPassword}} </td>
+                                               <td>{{s.WebSiteUri}}</td>
+                                               <td>{{s.FtpUri}}</td>
+
+                                               <td>$0.00</td>
+                                           </tr>
+                                       </table>-->
                 </td>
 
             </tr>
